@@ -1,0 +1,139 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+.container{
+  display: flex;
+  flex-direction: column;
+}
+
+.item{
+  flex: 0 0 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 60px;
+  color: whitesmoke;
+  text-transform: uppercase;
+}
+
+.item-1 {
+  background:url(./20180808_202930.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  color:darkgreen;
+}  
+
+
+.item-2{
+  background-color: tomato;
+}
+
+.item-3{
+  background-color:cyan;
+}
+
+.item-4{
+  background-color:aquamarine;
+}
+
+.item-5{
+  background-color: chartreuse;
+}
+
+.item-6{
+  background-color:darkblue;
+}
+
+.item-7{
+  background-color:purple;
+}
+
+.item-8{
+  background-color: salmon;
+}
+
+.item-9{
+  background-color: sienna;
+}
+
+.item-10{
+  background-color: springgreen;
+}
+
+@media screen and (min-width:576px) 
+{
+  .container {
+    display: grid;
+    height: 100vh;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(3,1fr);
+    grid-template-areas:
+      "one two three"
+      "one two four"
+      "five six seven"
+      "five eight nine"
+      "five eight ten"
+      "five eight ten";
+      
+  }
+  
+  .item-1 {
+    background:url(./20180808_202930.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    color:red;
+    text-align: center;
+    align-items: flex-end;
+    font-size: 60px;
+    grid-area: one;
+  }
+  
+  .item-2 {
+    background-color: green;
+    grid-area: two;
+  }
+  
+  .item-3 {
+    background-color: blue;
+    grid-area: three;
+  }
+  
+  .item-4 {
+    background-color: pink;
+    grid-area: four;
+  }
+  
+  .item-5 {
+    background-color:magenta;
+    grid-area: five;
+  }
+  
+  .item-6 {
+    background-color: paleturquoise;
+    grid-area: six;
+  }
+  
+  .item-7 {
+    background-color: aqua;
+    grid-area: seven;
+  }
+  
+  .item-8 {
+    background-color: burlywood;
+    grid-area: eight;
+  }
+  
+  .item-9 {
+    background-color: wheat;
+    grid-area: nine;
+  }
+  
+  .item-10 {
+    background-color: lawngreen;
+    grid-area: ten;
+  }
+  
+}
